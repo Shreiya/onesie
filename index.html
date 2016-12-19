@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Feed My Fishy</title>
+    <title>Woofer Onesie</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -69,10 +69,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                      <img src="./img/fish.svg" alt="" />
-                        <h1>Feed My Fishy</h1>
-                        <h3>Feed My Fishy is an IoT project that allows a person to remotely access their fish feeder,
-                          <br>and never worry about a hungry fishy again.</p></h3>
+                      <img src="./img/dog-bone.svg" alt="" />
+                        <h1>Woofer Onesie</h1>
+                        <h3>Woofer Onesie is a project that reads the pulse of a puppy with a heart-beat sensor, and displays it across the body, so you know exactly how your pooch is doing.</h3>
 
                     </div>
                 </div>
@@ -92,7 +91,7 @@
                 <div class="col-lg-12">
 
                     <div class="clearfix"></div>
-                    <h1 class="intro-message" style="color:#FF9100;"><br>How it works</h1>
+                    <h1 class="intro-message" style="color:black; font-size: 95px"><br>How it works</h1>
                     <p class="lead"></a></p>
                 </div>
 
@@ -112,13 +111,12 @@
                 <div class="col-lg-5 col-sm-6">
 
                     <div class="clearfix"></div>
-                    <h2 class="section-heading" style="color:#FF9100;">What do we have here?</h2>
-                    <p class="lead">Feed My Fishy is a servo-motor driven device that is triggered by a POST request that controls a function delivered by the Particle cloud through the Particle Photon.
-                    <br>DISCLAIMER : This video is a <a href="https://vimeo.com/143161189">boomerang</a>. The Device only functions once at the click of a web-enabled button.</p>
+                    <h2 class="section-heading" style="color:black;">What do we have here?</h2>
+                    <p class="lead">Woofer Onesie is a wearable-tech accessory that is placed on the underside of a onesie and using the Adafruit Flora, connected with the Pulse Amped Sensor and a 60-LED neopixel strip, displays the puppy's heartbeat across its body.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <!-- <img class="img-responsive" src="" alt=""> -->
-                    <video src="./img/IMG_2314.mov" class="img-responsive" width="320" height="320" controls></video>
+                    <video src="./img/the_thing.mov" class="img-responsive" width="320" height="320" autoplay="true" loop="true"></video>
                 </div>
             </div>
 
@@ -136,17 +134,19 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
 
                     <div class="clearfix"></div>
-                    <h2 class="section-heading" style="color:#FF9100;">What does it use?</h2>
+                    <h2 class="section-heading" style="color:black;">What does it use?</h2>
                     <p class="lead"><ul>
-                    <li>Cardboard pieces to make the prototype</li>
-                    <li>The Particle Photon</li>
-                    <li>Servo-Motor : In this case - <a href="http://www.es.co.th/schemetic/pdf/et-servo-s3003.pdf">The Futaba S3003</a></li>
-                    <li> A fish-bowl + fish + some fish food + a power source (3.7 V Lithium Polymer Battery) - Not Shown In This Image</li>
+                    <li>Pulse Amped Sensor (currently soldered to the Adafruit Flora) + Adafruit Flora</li>
+                    <li>A comfy cotton onesie</li>
+                    <li>A 2xAAA Battery Cage with JST Connector</li>
+                    <li>Felt for attaching the device to the onesie</li>
+                    <li>An understanding puppy (not shown here)</li>
+                    <li>An inactive Guinea Pig (also not shown here)</li>
                   </ul>
                   </p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="./img/Untitled-1-01.png" alt="">
+                    <img class="img-responsive" src="./img/wo_layout.jpg" alt="">
                 </div>
             </div>
 
@@ -162,13 +162,13 @@
                 <div class="col-lg-5 col-sm-6">
 
                     <div class="clearfix"></div>
-                    <h2 class="section-heading" style="color:#FF9100;">The Device</h2>
-                    <p class="lead">The device must be assembled in a way that the food is at a higher level and in a container that can drop a teaspoon of fish-food when the lever moves from 0&deg;-90&deg; degrees and back.
-                    <br><br>While at 0 degrees, the servo arm has a stick and a small piece of cardboard that is blocking the container's opening.
-                  <br><br>The servo-lever will only commence movement upon calling the function from the Particle cloud.</p>
+                    <h2 class="section-heading" style="color:black;">The Amazing Flora</h2>
+                    <p class="lead">Adafruit's Flora is an Arduino-compatible microcontroller used for wearable devices, and has built-in USB support to be reprogrammed according to the requirement.
+                    <br>
+                      For the purpose of Woofer Onesie, I soldered the Pulse Amped's as well as the Neopixel strip's connectors to the Flora's ports for easy placement.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="./img/Untitled-1-03.png" alt="">
+                    <img class="img-responsive" src="./img/soldering.jpg" alt="">
                 </div>
             </div>
 
@@ -185,12 +185,11 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
 
                     <div class="clearfix"></div>
-                    <h2 class="section-heading" style="color:#FF9100;">The brain behind the application - The Particle Photon</h2>
-                    <p class="lead">This project could even be successful with the use of an arduino connected to the computer or with a WiFi shield. However, the ease and simplicity of the Particle Photon is what made it a complete success.
-                    <br><br> The Photon is a WiFi developement kit that based on Cypress's WICED architecture, combines a powerful STM32 ARM Cortex M3 microcontroller and a Cypress Wi-Fi chip.</p>
+                    <h2 class="section-heading" style="color:black;">The heart of Woofer Onesie</h2>
+                    <p class="lead">Woofer Onesie's functionality comes from the detachable felt device that comprises the Flora + Pulse Amped + Battery cage - all kept together with conductive thread and the support from a glue gun.</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="./img/Untitled-1-02.png" alt="">
+                    <img class="img-responsive" src="./img/wireframing.jpg" alt="">
                 </div>
             </div>
 
@@ -198,6 +197,26 @@
         <!-- /.container -->
 
     </div>
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="clearfix"></div>
+                    <h1 class="intro-message" style="color:black; font-size: 45px"><br>Testing on Matisse, the Puppy.</h1>
+                    <p class="lead"></a></p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+
+
 
     <!-- /.content-section-a -->
     <div class="content-section-a">
@@ -207,17 +226,16 @@
                 <div class="col-lg-5 col-sm-6">
 
                     <div class="clearfix"></div>
-                    <h2 class="section-heading" style="color:#FF9100;">Wait. What controls it exactly?</h2>
-                    <p class="lead">A simple webpage.
-                    <br><br>A simple HTML document that uses the power of HTML5's form : action property can trigger the cloud to communicate to the photon that it has to run a certain function that has already been fed to it.
-                  <br><br>During this project the Photon had been rechristened 'Alexander' for the sanity of his master - The Blue Betta - 'Theodore'.</p>
+                    <h2 class="section-heading" style="color:black;">Hello Matisse.</h2>
+                    <p class="lead">This is Matisse. Taken after the iconic artist - he wanted to make his own mark in the world. And here he found his big break - by becoming the first puppy to have his heart-beat displayed on his body-sleeve.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="./img/AlexanderInActionFinalFIVE.gif" alt="">
+                    <img class="img-responsive" src="./img/Mattise_model.jpg" alt="">
                 </div>
             </div>
 
         </div>
+      </div>
 
         <div class="content-section-b">
 
@@ -227,13 +245,12 @@
                     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
 
                         <div class="clearfix"></div>
-                        <h2 class="section-heading" style="color:#FF9100;">Voila!</h2>
-                        <p class="lead">So here we have it. Just a web-controlled fish feeder. No biggie.
-                          <br>DISCLAIMER : This video is a <a href="https://vimeo.com/143161189">boomerang</a>. The Device only functions once at the click of a web-enabled button.</p>
+                        <h2 class="section-heading" style="color:black;">Matisse with the Onesie.</h2>
+                        <p class="lead">The device was attached to the bottom of the Onesie with the pulse-sensor tucked tight on the underside (with the help of some elastic) to read his femoral artery and accordingly have a strip of lights run across the neopixel strip.
                         </p>
                     </div>
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <video src="./img/IMG_2312.mov" class="img-responsive" autoplay="true" loop="true"></video>
+                        <img src="./img/wo_matisse.jpg" class="img-responsive"></video>
                     </div>
                 </div>
 
@@ -242,15 +259,137 @@
 
         </div>
 
+        <div class="content-section-a">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading" style="color:black;">An excited Matisse.</h2>
+                        <p class="lead">Like all models on their first shoot, here we have Matisse really working his outfit and its services.</p>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <video class="img-responsive" src="./img/IMG_2350.mov" alt="" autoplay="true" loop="true">
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="content-section-b">
+
+              <div class="container">
+
+                   <div class="row">
+                      <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+
+                          <div class="clearfix"></div>
+                          <h2 class="section-heading" style="color:black;">A tired Matisse.</h2>
+                          <p class="lead">However, after an exhausting day consisting of extensive documentation and multiple tailor-breaks, we have Matisse lying about the house - with just enough energy to observe passer-bys, and somewhat fulfill his original duties of a guard-puppy.
+                          </p>
+                      </div>
+                      <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                          <video class="img-responsive" src="./img/IMG_2351.mov" alt="" autoplay="true" loop="true">
+                      </div>
+                  </div>
+
+              </div>
+              <!-- /.container -->
+
+          </div>
+
+          <div class="content-section-a">
+
+              <div class="container">
+
+                  <div class="row">
+                      <div class="col-lg-12">
+
+                          <div class="clearfix"></div>
+                          <h1 class="intro-message" style="color:black; font-size: 45px"><br>Testing on Mario, the Guinea Pig.</h1>
+                          <p class="lead"></a></p>
+                      </div>
+
+                  </div>
+
+              </div>
+              <!-- /.container -->
+
+          </div>
+
+          <div class="content-section-a">
+
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-5 col-sm-6">
+
+                          <div class="clearfix"></div>
+                          <h2 class="section-heading" style="color:black;">Testing the Onesie's services on Mario.</h2>
+                          <p class="lead">Here, the functionality of Woofer Onesie's sensor with neopixel will be tested on Mario with the heart-beat displayed around the periphery of his bed.</p>
+                      </div>
+                      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                          <img class="img-responsive" src="./img/mario.jpg" alt="">
+                      </div>
+                  </div>
+
+              </div>
+            </div>
+
+            <div class="content-section-b">
+
+                <div class="container">
+
+                     <div class="row">
+                        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+
+                            <div class="clearfix"></div>
+                            <h2 class="section-heading" style="color:black;">The different moods of Mario.</h2>
+                            <p class="lead">The first part of the video shows Mario comfortably sitting in his bed and the slow heartbeat shows how calm his body is.
+                            <br>
+                              In the second video, we can hear Matisse in the background wanting to play. Consequently, Mario's heart is racing because of the loud barking.
+                            <br>
+                          Mario was heavily comforted after the video was taken.</p>
+                        </div>
+                        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                            <video src="./img/IMG_2359.mov" class="img-responsive" autoplay="true" loop="true" volume="0.3" controls></video>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container -->
+
+            </div>
+
+            <div class="content-section-a">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-sm-6">
+
+                            <div class="clearfix"></div>
+                            <h2 class="section-heading" style="color:black;">Voila!</h2>
+                            <p class="lead">And here we have it! A fully functional device that can measure one's heartbeat and display it on neopixels.
+                            <br>
+                            The code used to showcase the heartbeat on Mario and Matisse varies in purely the movement of lights. I wanted there to be a difference because Matisse's BPM is significantly lower than Mario's.</p>
+                        </div>
+                        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                            <video src="./img/IMG_2360.mov" class="img-responsive" autoplay="true" loop="true" volume="0.3" controls>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+
 	<a  name="contact"></a>
     <div class="banner">
 
         <div class="container">
 
             <!-- <div class="row"> -->
-                <div class="col-lg-12" style="color:#FF9100;">
+                <div class="col-lg-12" style="color:black;">
                     <h2>Check out the code.
-                      <br>Or just show Alex off to the world.</h2>
+                      <br>Or just show Woofer Onesie off to the world.</h2>
                       <br>
                       <br>
                 </div>
@@ -259,19 +398,19 @@
                   <br>
                     <ul class="list-inline banner-social-buttons">
                         <li>
-                            <a href="https://twitter.com/share?url=https://shreiya.github.io/fishy&amp;text=So%20Cool!&amp;via=shreiya" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
+                            <a href="https://twitter.com/share?url=https://shreiya.github.io/onesie&amp;text=So%20Cool!&amp;via=shreiya" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name"></span></a>
 
 
 
                         </li>
                         <li>
-                            <a href="https://github.com/Shreiya/fishy" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name"></span></a>
+                            <a href="https://github.com/Shreiya/onesie" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name"></span></a>
                         </li>
                         <li>
 
 
 
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fshreiya.github.io/fishy%2F&amp;src=sdkpreparse" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name"></span></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fshreiya.github.io/onesie%2F&amp;src=sdkpreparse" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name"></span></a>
 
 
 
