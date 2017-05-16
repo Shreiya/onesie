@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script');
+
 
 
 
@@ -20,6 +21,13 @@ h6 {
     font-weight: 700;
 }
 
+#logo {
+  font-family: 'Oleo Script', cursive;
+  font-size: 82px;
+  font-weight: lighter;
+  color: white;
+}
+
 .topnav {
     font-size: 14px;
 }
@@ -34,7 +42,7 @@ h6 {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    color: black;
+    color: #333;
     background: white;
     background-size: cover;
 }
@@ -54,7 +62,7 @@ h6 {
   font-weight: 600;
 }
 
-.starter > h1 {
+.intro-message > h1 {
     margin: 0;
     /*text-shadow: 2px 2px 3px rgba(0,0,0,0.6);*/
     font-size: 5em;
@@ -66,7 +74,7 @@ h6 {
 }
 
 .section-heading h2 {
-color: white !important;
+color: #2FC0D8 !important;
 }
 
 a {
@@ -88,12 +96,6 @@ li {
 }
 
 @media(max-width:767px) {
-
-    img {
-      height: 100px;
-      width: 300px;
-    }
-
     .intro-message {
         padding-bottom: 15%;
     }
@@ -163,7 +165,7 @@ li {
 }
 
 .intro-message1 h1 {
-  color: white;
+  color: #2FC0D8;
 }
 
 .banner ul {
@@ -189,6 +191,9 @@ li {
 }
 
 @media(max-width:767px) {
+
+
+
     .banner h2 {
         margin: 0;
         /*text-shadow: 2px 2px 3px rgba(0,0,0,0.6);*/
